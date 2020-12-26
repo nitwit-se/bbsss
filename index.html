@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BBSSaver</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/xterm.css" />
+    <script src="js/jquery-3.1.1.slim.min.js"></script>
+    <script src="js/xterm.js"></script>
+    <script charset="utf-8" src="js/base64.js"></script>
+  </head>
+
+BBSnostalgia
+
+  <body style="background-color: #000000;">
+    <div class="site-wrapper">
+      <div id="terminal" style=" margin:50px auto; height:100%; padding:4px;"></div>
+
+      <div id="menu_container" style="margin:auto auto; font-size: 32px; width:100%; background-color: #B0B0B0;  color:rgba(0,0,0,0.9); position: absolute; top:0px; left:0px; padding-left: 10px; z-index:0">
+        <span style="width:5%">═</span>
+      </div>
+      <div id="filename_container" style=" margin:auto auto; width: 100%; font-size: 32px; width:100%; background-color: #00B0B0;  color:rgba(0,0,0,0.9); position: absolute; bottom:0px; left:0px; padding-left: 10px; padding-right: 10px; z-index:0">
+        <span id="filename" style="display: inline-block;">ANSI</span>
+        │
+        <span id="baud_rate" style="display: inline-block;">9600</span>
+        │
+        <span id="filename_spacere" style="display: inline-block; width:auto"></span>
+        <span id="clock" style="display: inline-block; text-align: right; float:right "></span>
+
+      </div>
+      <img src="scanlines.png" style="position: absolute; top:0px; width:100%; height:100%; opacity: 0.5;">
+    </div>
+
+    <script charset="utf-8" src="js/ansi.js"></script>
+    <script charset="utf-8" src="js/demo.js"></script>
+
+    <!--
+      Attributions:
+
+      Some ANSI files from http://artscene.textfiles.com/ansi/welcomes/
+
+    -->
+
+  </body>
+</html>
