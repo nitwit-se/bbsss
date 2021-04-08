@@ -1,3 +1,4 @@
+/* Modified version of https://github.com/dankogai/js-base64 - to avoid conversions to "undefined" */
 /*
  *  base64.js
  *
@@ -15,7 +16,7 @@
 }((
     typeof self !== 'undefined' ? self
         : typeof window !== 'undefined' ? window
-        : typeof global !== 'undefined' ? global
+        : typeof global !== 'undefined' ? global    
 : this
 ), function(global) {
     'use strict';
