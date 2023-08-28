@@ -291,7 +291,7 @@ function BBSLoop() {
     ];
 
 
-    var term = new window.Terminal({ fontFamily: "Meslo", fontSize: 32,
+    var term = new window.Terminal({ fontFamily: "IBMEGA", fontSize: 32,
         letterSpacing: -0, rows: 25, useFlowControl: true, cursorBlink: true, cursorStyle: "block", /*"underline", */
         lineHeight: 0.95, allowTransparency: true, convertEol: true, enableBold: false,
         theme: {
@@ -368,7 +368,7 @@ function BBSLoop() {
             if ( index == 7 ) delay=25*time_scale;
             setTimeout( function() { delayedPostambleWriter(term, index+1 ) }, delay );
         } else {
-            setTimeout( function() { window.location = window.location }, 500*time_scale );
+            //setTimeout( function() { window.location = window.location }, 500*time_scale );
 
         }
     }
