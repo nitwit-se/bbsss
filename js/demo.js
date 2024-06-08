@@ -368,7 +368,7 @@ function BBSLoop() {
             if ( index == 7 ) delay=25*time_scale;
             setTimeout( function() { delayedPostambleWriter(term, index+1 ) }, delay );
         } else {
-            //setTimeout( function() { window.location = window.location }, 500*time_scale );
+            setTimeout( function() { window.location = window.location }, 500*time_scale );
 
         }
     }
